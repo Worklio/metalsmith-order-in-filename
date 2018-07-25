@@ -1,0 +1,21 @@
+{
+  "name": "metalsmith-order-in-filename",
+  "version": "1.0.0",
+  "description": "A metalsmith plugin for add order meta tag from filename",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/worklio/metalsmith-order-in-filename.git"
+  },
+  "author": "Worklio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/worklio/metalsmith-order-in-filename/issues"
+  },
+  "homepage": "https://github.com/worklio/metalsmith-order-in-filename#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "minimatch": "^3.0.3",
+    "path": "^0.12.7"
+  }
+}
