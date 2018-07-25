@@ -1,0 +1,29 @@
+'use strict'
+
+const { words, capitalize } = require('lodash');
+const path = require('path');
+
+module.exports = (options = {}) => ((files, metalsmith, done) => {
+  let re = /^(\d+)\s(.*)$/;
+
+  Object.keys(files).forEach(function(file){
+    let data = files[file];
+
+
+    let filePath = path.parse(file);
+    let title = filePath.name;
+    let order;
+
+    let segments = title.match(re);
+    if (segments!==null) {
+      order = Number(segments[1]);
+      title = segments[2];
+    }
+
+    data.order = order;
+    data.title = words(title).map(capitalize).join(' ');
+    
+  });
+
+  done();
+})
