@@ -15,13 +15,19 @@ module.exports = (options = {}) => ((files, metalsmith, done) => {
     let order;
 
     let segments = title.match(re);
-    if (segments!==null) {
+    if (segments==null) {
+      if( title.match(/^\d+$/) ) {
+        order = Number(title);
+      }
+    }
+    else {
       order = Number(segments[1]);
       title = segments[2];
     }
 
     data.order = order;
-    data.title = words(title).map(capitalize).join(' ');
+    if(data.title == undefined)
+      data.title = words(title).map(capitalize).join(' ');
     
   });
 
