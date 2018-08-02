@@ -15,7 +15,7 @@ $ npm install --save-dev metalsmith-order-in-filename
 
 ## Usage
 
-### Get order and title of article in filenames
+### Use order and title of article in filenames
 
 ```bash
 1 article title.md
