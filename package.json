@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-order-in-filename",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A metalsmith plugin for add order meta tag from filename",
   "main": "index.js",
   "repository": {
