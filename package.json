@@ -15,7 +15,6 @@
   "homepage": "https://github.com/worklio/metalsmith-order-in-filename#readme",
   "dependencies": {
     "lodash": "^4.17.4",
-    "minimatch": "^3.0.3",
     "path": "^0.12.7"
   }
 }
